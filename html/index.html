@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="../javascript/index.js"></script>
+    
     <title>QUIZ BOARD</title>
 </head>
 <body>
     <div class = "Container">
         <h1>QUIZ BOARD</h1>
         <div class = "Box">
-            <form id = "quiz" autocomplete="off">
+            <form id = "quiz" autocomplete="off" name = "quiz" onsubmit="return onSubmit()">
                 <label for="question1">
                     <p><b>1. What type of Langauage is Javascript? </p></b>
                 
@@ -82,7 +84,7 @@
                 </label><br><br>
 
                 <div class = "button">
-                    <input type="submit" value="Submit Answers" class = "submit">
+                    <input type="submit" value="Submit Answers" class = "submit" id = "btn">
                 </div>
 
             </form>
