@@ -14,7 +14,7 @@
     <div class = "Container">
         <h1>QUIZ BOARD</h1>
         <div class = "Box">
-            <form id = "quiz" autocomplete="off" name = "quiz" onsubmit="return onSubmit()">
+            <form id = "quiz" autocomplete="off" name = "quiz" onsubmit= "return onSubmit()">
                 <label for="question1">
                     <p><b>1. What type of Langauage is Javascript? </p></b>
                 
@@ -44,7 +44,7 @@
                     <input id="If-then-else" type="radio" name="question2" value="If-then-else" required>
                     If-then-else statement<br>
     
-                    <input id="immediateif" type="radio" name="question2" value="immediateif" required>
+                    <input id="immediateif" type="radio" name="question2" value="Immediate if" required>
                     Immediate if
     
                 </label>
@@ -55,7 +55,7 @@
                     <input id="conditional" type="radio" name="question3" value="conditional" required>
                     Conditional block<br>
                     
-                    <input id="block" type="radio" name="question3" value="block" required>
+                    <input id="block" type="radio" name="question3" value="Block that combines a number of statements into a single compound statement" required>
                     Block that combines a number of statements into a single compound statement<br>
     
                     <input id="conditionalSingle" type="radio" name="question3" value="conditionalSingle" required>
@@ -75,7 +75,7 @@
                     <input id="dataTypes" type="radio" name="question4" value="dataTypes" required>
                     Data types<br>
     
-                    <input id="declarationStatements" type="radio" name="question4" value="declarationStatements" required>
+                    <input id="declarationStatements" type="radio" name="question4" value="Declaration statements" required>
                     Declaration statements<br>
     
                     <input id="prototypes" type="radio" name="question4" value="prototypes" required>
@@ -83,11 +83,14 @@
     
                 </label><br><br>
 
-                <div class = "button">
-                    <input type="submit" value="Submit Answers" class = "submit" id = "btn">
-                </div>
-
+                <button type="submit" class = "button" id = "button">Submit Answers</button>
+                    
             </form>
+
+            <div id = "results">
+                <h2>You Scored: Not yet attempted</h2>
+            </div>
+                
         </div>
     </div>
 
