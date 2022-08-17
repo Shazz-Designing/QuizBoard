@@ -1,0 +1,50 @@
+body{
+    font-family: cursive;
+}
+
+
+.Box
+    {
+    float: center;
+    padding: 0.3%;
+    width: 66%;
+    border: 2px solid rgb(18, 137, 167);
+    
+}
+
+h1
+    {
+    font-size: 23px;
+    font-family: cursive;
+    color: rgb(18, 137, 167); 
+    text-indent: 25%;
+    top: 15px;  
+
+}
+
+.Container 
+    {
+    margin: 10px 20px 15px 300px;
+}
+
+
+#after_submit {
+
+    border-radius: 10px;
+    visibility: hidden;
+    background-color: aqua;
+    border: 2px solid black;
+    padding: 0.4%
+
+
+  }
+
+ .Results1, .Results2, .Results3, .Results4 {
+
+    border-radius: 10px;
+    background-color: rgb(18, 177, 216); 
+    border: 2px solid black;
+    padding: 0.4%
+
+
+  }
