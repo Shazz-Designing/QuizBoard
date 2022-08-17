@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="../javascript/index.js"></script>
@@ -14,7 +15,7 @@
     <div class = "Container">
         <h1>QUIZ BOARD</h1>
         <div class = "Box">
-            <form id = "quiz" autocomplete="off" name = "quiz" onsubmit= "return onSubmit()">
+            <form id = "quiz" autocomplete="off" name = "quiz">
                 <label for="question1">
                     <p><b>1. What type of Langauage is Javascript? </p></b>
                 
@@ -32,14 +33,14 @@
 
                 </label>
 
-                <!--Add question 1 answer section-->>
+                <!--Add question 1 answer section-->
 
                 <div class = Results1>
                     <p id="print1"></p>
                 </div>
 
                 <label for="question2">
-                    <p><b>2. Which one of the following also known as Conditional Expression? </p></b>
+                    <p>2. Which one of the following also known as Conditional Expression? </p>
                     
                     <input id="alternative" type="radio" name="question2" value="alternative" required>
                     Alternative to if-else<br>
@@ -55,7 +56,7 @@
     
                 </label>
 
-                <!--Add question 2 answer section-->>
+                <!--Add question 2 answer section-->
 
                 <div class = Results2>
                     <p id="print2"></p>
@@ -78,7 +79,7 @@
     
                 </label>
 
-                <!--Add question 3 answer section-->>
+                <!--Add question 3 answer section-->
 
                 <div class = Results3>
                     <p id="print3"></p>
@@ -101,7 +102,7 @@
     
                 </label>
                 
-                <!--Add question 4 answer section-->>
+                <!--Add question 4 answer section-->
 
                 <div class = Results4>
                     <p id="print4"></p>
@@ -109,14 +110,16 @@
                 
                 <br><br>
 
-                <button type="submit" class = "button" id = "button">Submit Answers</button>
-                    
+                <button type="button" class="btn btn-primary btn-lg btn-block" onclick="submitAnswers()">Submit Answers</button><br>
+                                
             </form>
 
-            <div id = "results">
-                <h2>You Scored: Not yet attempted</h2>
+            <div id = "after_submit">
+                <p id = "number_correct"></p>
             </div>
                 
+
+               
         </div>
     </div>
 
