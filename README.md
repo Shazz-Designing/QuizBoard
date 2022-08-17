@@ -19,7 +19,9 @@ No known bugs have been encountered. Initially the score in percentage was not d
 5.	BOOTSTRAP
 
 ## Support and contact details
-In case you run into any issues or have questions, ideas or concerns, or you want to make a contribution to the code, feel free to contact me via email :sharonapot@gmail.com### License
+In case you run into any issues or have questions, ideas or concerns, or you want to make a contribution to the code, feel free to contact me via email :sharonapot@gmail.com
+
+### License
 *MIT LICENSE*
 
 Copyright (c) 2022 **SHARON A**
